@@ -35,7 +35,7 @@ This repository features an end-to-end Computer Vision pipeline designed to dete
 ### Get the code and open the folder
 ### 1. Clone the Repository
 ```bash    
-git clone [https://github.com/Awais123-creator/DeepRice-Vision-Segmentation.git](https://github.com/Awais123-creator/DeepRice-Vision-Segmentation)
+git clone https://github.com/Awais123-creator/DeepRice-Vision-Segmentation.git
 cd DeepRice-Vision-Segmentation
 ```
 You should see:
