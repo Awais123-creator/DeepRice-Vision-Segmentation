@@ -1,5 +1,24 @@
-# Awais Cheema - CIO Programming Test: Rice Grain Counting
-# My Solution 
+# DeepRice-Vision: Automated Grain Segmentation & Counting
+**Developed by Awais Cheema** 
+This repository features an end-to-end Computer Vision pipeline designed to detect, segment, and uniquely label individual objects (rice grains) in high-noise environments. It utilizes advanced morphological processing and the Watershed algorithm to resolve complex clusters of overlapping grains.
+
+---
+
+## Key Technical Features
+* **Adaptive Semantic Masking:** Leverages **Otsu’s Thresholding** and Gaussian filtering to eliminate sensor noise and isolate the foreground with high precision.
+* **Instance Segmentation (Watershed):** Implements a **Euclidean Distance Transform** to identify the "centroid" of each grain. This allows the model to separate touching objects that traditional edge-detection methods fail to resolve.
+* **Morphological Optimization:** Uses **Mathematical Morphology** (Binary Closing and Small Object Removal) to refine grain boundaries and ensure structural integrity.
+* **HSV Color Mapping:** A custom algorithm that assigns a unique, high-contrast hue to every identified instance, ensuring 100% distinct visualization for all detected grains.
+
+---
+
+## Results
+* **Final Grain Count:** 70 rice grains
+* **Visual Output:** Each grain is uniquely color-mapped to verify segmentation accuracy.
+
+![Final Result](figs/rice_coloured.png)
+
+---
 
 1) **What I did**
 - I loaded the file 'figs/rice.png'
@@ -14,9 +33,10 @@
 
 ## 2) How to run the code from GitHub
 ### Get the code and open the folder
+### 1. Clone the Repository
 ```bash    
-git clone https://github.com/dbe-cio/cio-Awais123-creator
-cd cio-Awais123-creator
+git clone [https://github.com/Awais123-creator/DeepRice-Vision-Segmentation](https://github.com/Awais123-creator/DeepRice-Vision-Segmentation)
+cd DeepRice-Vision-Segmentation
 ```
 You should see:
 - README.md
