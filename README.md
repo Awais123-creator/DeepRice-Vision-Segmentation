@@ -16,7 +16,7 @@ This repository features an end-to-end Computer Vision pipeline designed to dete
 * **Final Grain Count:** 70 rice grains
 * **Visual Output:** Each grain is uniquely color-mapped to verify segmentation accuracy.
 
-!(figrice_coloured.png)
+![Final Result](figrice_coloured.png)
 
 ---
 
